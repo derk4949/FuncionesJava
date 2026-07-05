@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class FuncionPar {
     // Funcion para saber si un numero es par
-    static boolean esPar(int numero){
+    static boolean esPar(int _numero){
 //        if(numero % 2 == 0)
 //            return true;
 //        else
 //            return false;
-        return (numero % 2 == 0) ? true : false;
+        return (_numero % 2 == 0) ? true : false;
     }
 
     public static void main(String[] args) {
