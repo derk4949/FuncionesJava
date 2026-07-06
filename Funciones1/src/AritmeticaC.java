@@ -24,7 +24,7 @@ public class AritmeticaC {
     }
 
     public static void main(String[] args) {
-        System.out.println("*** Ejemplo Aritmetica ***");
+        System.out.println("*** Ejemplo aritmetica.Aritmetica ***");
         AritmeticaC aritmetica1 = new AritmeticaC(5,7);
 //        aritmetica1.operando1 = 5;
 //        aritmetica1.operando2 = 7;

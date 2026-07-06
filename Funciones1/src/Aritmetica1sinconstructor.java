@@ -18,7 +18,7 @@ public class Aritmetica1sinconstructor {
     }
 
     public static void main(String[] args) {
-        System.out.println("*** Ejemplo Aritmetica ***");
+        System.out.println("*** Ejemplo aritmetica.Aritmetica ***");
         var aritmetica1 = new Aritmetica1sinconstructor();
         aritmetica1.operando1 = 5;
         aritmetica1.operando2 = 7;

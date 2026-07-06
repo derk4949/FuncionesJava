@@ -19,8 +19,8 @@ public class Persona {
         objeto2.nombre = "Ian";
         objeto2.apellido = "Gomez";
         objeto2.mostrarPersona();
-
         System.out.println();
+
         Persona flores = new Persona();
         flores.nombre = "Christian Arnold";
         flores.apellido = "Flores Alarcon";
