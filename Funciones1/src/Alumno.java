@@ -50,7 +50,6 @@ public class Alumno {
                 Nombre: %s
                 edad %d
                 nota: %.2f
-                
                 """.formatted(this.nombre,this.edad,this.examenFinal);
         System.out.println(estado);
     }
@@ -61,10 +60,10 @@ public class Alumno {
 class PruebaAlumno{
     public static void main(String[] args) {
         Alumno alumno1 = new Alumno("juan", 14, 16);
+        Alumno alumno2 = new Alumno("pedro", 14, 16);
 
-
-        Alumno alumno1 = new Alumno("juan", 14, 16);
         alumno1.mostrarEstado();
+        alumno2.mostrarEstado();
 
 
 
