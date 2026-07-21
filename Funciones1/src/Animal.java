@@ -1,39 +1,41 @@
 public class Animal {
-    protected void comer(){
-        System.out.println("Como muchas veces al día");
-    }
+    protected void hacerSonido(){
+        System.out.println("el animal hace un sonido");
 
-    protected void dormir(){
-        System.out.println("Duermo muchas horas");
     }
 }
+class Perro extends Animal {
 
-class Perro extends Animal{
-    public void hacerSonido(){
-        System.out.println("Puedo ladrar");
-    }
 
     @Override
-    protected void dormir(){
-        System.out.println("Duermo 15 horas al dia");
-        System.out.println("metodo clase padre: ");
-        super.dormir();
+    protected void hacerSonido() {
+        System.out.println("el perro hace guaf");
     }
 }
 
-class PruebaAnimal{
+class Gato extends Animal {
+    @Override
+    protected void hacerSonido() {
+        System.out.println("el gato hace miau");
+    }
+}
+
+class PruebaAnimal {
+
+    static void imprimirSonido(Animal animal){
+        animal.hacerSonido();
+    }
+
     public static void main(String[] args) {
-        System.out.println("*** Ejemplo de Herencia ***");
-        System.out.println("Clase Padre, soy un Animal");
-        var animal1 = new Animal();
-        animal1.comer();
-        animal1.dormir();
-        // animal1.hacerSonido(); // este metodo no existe en la clase padre
-
-        System.out.println("\nClase Hija, soy un Perro");
-        var perro1 = new Perro();
-        perro1.comer();
-        perro1.dormir();
-        perro1.hacerSonido();
+        //objeto de la clase padre (animal)
+        // Animal animal = new Animal();
+        Animal animal = new Perro();
+        imprimirSonido(animal);
     }
 }
+
+
+
+
+
+
