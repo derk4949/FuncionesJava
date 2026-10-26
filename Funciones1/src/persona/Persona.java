@@ -1,17 +1,46 @@
 package persona;
 
 public class Persona {
-    String nombre;
-    String apellido;
+    private static int contadorPersonas = 0;
+    private int idPersona;
+    private String nombre;
+    private String apellido;
 
     public Persona(String nombre, String apellido){
         this.nombre = nombre;
         this.apellido = apellido;
+        this.idPersona = ++Persona.contadorPersonas;
     }
 
     @Override
     public String toString() {
-        return "nombre: "+ this.nombre + ", Apellido: " + this.apellido + "dir. Mem. " + super.toString();
+        return "Id: " + this.idPersona
+                + ", nombre: " + this.nombre
+                + ", Apellido: " + this.apellido
+                + ", dir. Mem. " + super.toString();
+    }
+
+    public int getIdPersona() {
+        return this.idPersona;
+    }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public String getApellido(){
+        return this.apellido;
+    }
+    public void setApellido(String apellido){
+        this.apellido = apellido;
+    }
+
+    public static int getContadorPersonas(){
+        return Persona.contadorPersonas;
     }
 }
 

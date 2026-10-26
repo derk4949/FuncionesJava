@@ -1,4 +1,4 @@
-package funciones.aritmetica;
+package funcionesaritmetica;
 
 public class Aritmetica {
     private int operando1;
