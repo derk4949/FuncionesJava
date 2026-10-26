@@ -1,3 +1,5 @@
+package polimorfismo;
+
 public class Animal {
     protected void hacerSonido(){
         System.out.println("el animal hace un sonido");
@@ -5,7 +7,6 @@ public class Animal {
     }
 }
 class Perro extends Animal {
-
 
     @Override
     protected void hacerSonido() {

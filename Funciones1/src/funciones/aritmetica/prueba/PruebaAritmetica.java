@@ -1,6 +1,6 @@
-package prueba;
+package funciones.aritmetica.prueba;
 
-import aritmetica.Aritmetica;
+import funciones.aritmetica.Aritmetica;
 
 public class PruebaAritmetica {
     public static void main(String[] args) {
