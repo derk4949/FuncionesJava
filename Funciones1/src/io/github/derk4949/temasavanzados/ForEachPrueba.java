@@ -5,7 +5,7 @@ public class ForEachPrueba {
         int edades[] = {5, 10, 30, 45};
 
         for (int edad : edades){
-            System.out.println(edad);
+            System.out.println("edad: " + edad);
         }
         // desventaja de usar este for esto es que ya no se tiene acceso al indice
     }
