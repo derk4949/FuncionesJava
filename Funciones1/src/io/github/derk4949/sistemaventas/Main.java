@@ -14,14 +14,17 @@ public class Main {
         Orden orden1 = new Orden();
         orden1.agregarProductos(producto1);
         orden1.agregarProductos(producto2);
-        orden1.mostrarOrden();
+        System.out.println(orden1);
+//        orden1.mostrarOrden();
 
         orden1.agregarProductos(producto3);
         orden1.agregarProductos(producto4);
-        orden1.mostrarOrden();
+        System.out.println(orden1);
+//        orden1.mostrarOrden();
 
         Orden orden2 = new Orden();
         orden2.agregarProductos(new Producto("Playera", 15.00));
-        orden2.mostrarOrden();
+        System.out.println(orden2);
+//        orden2.mostrarOrden();
     }
 }

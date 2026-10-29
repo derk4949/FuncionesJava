@@ -38,24 +38,26 @@ public class Orden {
         return total;
     }
 
-    public void mostrarOrden(){
-        System.out.println("id orden; "+ this.idOrden);
-        double totalOrden = this.calcularTotal();
-        System.out.println("\t total de la orden; $"+ totalOrden);
-        System.out.println("\t Productos de la orden: ");
-        for (int i = 0; i < this.contadorProductos; i++ ){
-            System.out.println("\t\t"+ this.productos[i]);
-        }
-    }
+//    public void mostrarOrden(){
+//        System.out.println("id orden; "+ this.idOrden);
+//        double totalOrden = this.calcularTotal();
+//        System.out.println("\t total de la orden; $"+ totalOrden);
+//        System.out.println("\t Productos de la orden: ");
+//        for (int i = 0; i < this.contadorProductos; i++ ){
+//            System.out.println("\t\t"+ this.productos[i]);
+//        }
+//    }
 
     @Override
     public String toString() {
-        return "Orden{" +
-                "idOrden=" + idOrden +
-                ", productos=" + Arrays.toString(productos) +
-                ", contadorProductos=" + contadorProductos +
-                ", precioTotal=" + precioTotal +
-                '}';
+        String resultado = "id orden; "+ this.idOrden + "\n";
+        double totalOrden = this.calcularTotal();
+        resultado += "\t total de la orden; $"+ totalOrden + "\n";
+        resultado += "\t Productos de la orden: " + "\n";
+        for (int i = 0; i < this.contadorProductos; i++ ){
+            resultado+= "\t\t" + this.productos[i] + "\n";
+        }
+        return resultado;
     }
 }
 
