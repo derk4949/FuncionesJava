@@ -31,7 +31,7 @@ public class Orden {
 
     public double calcularTotal(){
         double total = 0;
-        for (int i = 0; i < contadorProductos; i++){
+        for (int i = 0; i < this.contadorProductos; i++){
             Producto producto = this.productos[i];
             total += producto.getPrecio();  // total = total + producto.getPrecio()
         }
